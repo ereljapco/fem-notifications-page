@@ -1,0 +1,38 @@
+.notifications__header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.notifications__title {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.notifications__unread-count {
+  color: var(--clr-white-500);
+  background-color: var(--clr-blue-500);
+  font-size: 0.95rem;
+  font-weight: 500;
+  border-radius: 0.35rem;
+  padding-inline: 0.7rem;
+  padding-block: 0.156rem;
+}
+
+.notifications__all-read-btn {
+  color: var(--clr-grayish-blue-600);
+  background-color: transparent;
+  font-family: inherit;
+  font-size: 0.89rem;
+  font-weight: 300;
+  border: none;
+}
+
+.notifications__all-read-btn:hover {
+  color: var(--clr-blue-500);
+  cursor: pointer;
+}

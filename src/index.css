@@ -1,13 +1,41 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*,
+::after,
+::before {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --ff-primary: 'Plus Jakarta Sans', sans-serif;
+  --clr-red-500: hsl(1, 90%, 64%);
+  --clr-blue-500: hsl(219, 85%, 26%);
+  --clr-white-500: hsl(0, 0%, 100%);
+  --clr-grayish-blue-100: hsl(210, 60%, 98%);
+  --clr-grayish-blue-200: hsl(211, 68%, 94%);
+  --clr-grayish-blue-300: hsl(205, 33%, 90%);
+  --clr-grayish-blue-500: hsl(219, 14%, 63%);
+  --clr-grayish-blue-600: hsl(219, 12%, 42%);
+  --clr-grayish-blue-900: hsl(224, 21%, 14%);
+  --clr-body-bg: var(--clr-grayish-blue-100);
+  --clr-text: var(--clr-grayish-blue-600);
+}
+
+body {
+  font-family: var(--ff-primary);
+  background-color: var(--clr-body-bg);
+}
+
+.notifications {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--clr-white-500);
+}
+
+.c-notifications {
+  width: 91.5%;
+  margin-inline: auto;
+  padding-top: 1.5rem;
 }
