@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from './components/header/Header';
+import Notifications from './components/notifications/Notifications';
 
 export default function App() {
   return (
@@ -7,6 +8,7 @@ export default function App() {
       <section className="notifications">
         <div className="c-notifications">
           <Header />
+          <Notifications />
         </div>
       </section>
     </>

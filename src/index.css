@@ -10,6 +10,7 @@
 
 :root {
   --ff-primary: 'Plus Jakarta Sans', sans-serif;
+  /* --ff-primary: 'plus_jakarta_sansregular'; */
   --clr-red-500: hsl(1, 90%, 64%);
   --clr-blue-500: hsl(219, 85%, 26%);
   --clr-white-500: hsl(0, 0%, 100%);
