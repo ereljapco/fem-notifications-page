@@ -55,11 +55,13 @@ export default function Notifications() {
                   )}
                 </p>
                 {itemImg ? (
-                  <img
-                    className="notification__item-img"
-                    src={itemImg}
-                    alt=""
-                  />
+                  <a className="notifification__item-img-link" href={itemLink}>
+                    <img
+                      className="notification__item-img"
+                      src={itemImg}
+                      alt=""
+                    />
+                  </a>
                 ) : (
                   ''
                 )}
