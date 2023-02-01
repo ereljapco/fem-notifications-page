@@ -49,6 +49,11 @@
 .notification__username {
   color: var(--clr-grayish-blue-900);
   font-weight: 700;
+  text-decoration: none;
+}
+
+.notification__username:hover {
+  color: var(--clr-blue-500);
 }
 
 .notification__item-link {

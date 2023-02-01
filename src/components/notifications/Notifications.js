@@ -31,15 +31,15 @@ export default function Notifications() {
           >
             <img
               className="notification__user-img"
-              src={user.userImg}
-              alt={user.username}
+              src={user.img}
+              alt={user.name}
             />
             <div className="c-notification">
               <div className="c-notification__body">
                 <p className="notification__body">
-                  <span className="notification__username">
-                    {user.username}
-                  </span>
+                  <a className="notification__username" href={user.url}>
+                    {user.name}
+                  </a>
                   <span className="notification__msg">{notificationMsg}</span>
                   {itemTitle ? (
                     <a className="notification__item-link" href={itemLink}>
