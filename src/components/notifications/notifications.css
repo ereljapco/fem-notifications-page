@@ -63,12 +63,18 @@
 
 .notification__item-img-link {
   grid-row: span 2;
-  width: 2.5rem;
+  width: clamp(2.625rem, 11.2vw, 2.9rem);
   aspect-ratio: 1 / 1;
 }
 
 .notification__item-img {
+  border: 2px solid transparent;
+  border-radius: 0.5rem;
   width: 100%;
+}
+
+.notification__item-img-link:hover .notification__item-img {
+  border-color: var(--clr-grayish-blue-300);
 }
 
 .notification__timestamp {
