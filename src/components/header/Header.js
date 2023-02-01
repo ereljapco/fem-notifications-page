@@ -24,11 +24,7 @@ export default function Header({ setRead, notificationsList }) {
     <header className="notifications__header">
       <h1 className="notifications__title">
         Notifications
-        {unreadCount > 0 ? (
-          <span className="notifications__unread-count">{unreadCount}</span>
-        ) : (
-          ''
-        )}
+        <span className="notifications__unread-count">{unreadCount}</span>
       </h1>
       <button
         className="notifications__all-read-btn"
