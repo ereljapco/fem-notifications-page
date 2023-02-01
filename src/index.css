@@ -29,6 +29,12 @@ body {
   background-color: var(--clr-body-bg);
 }
 
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .notifications {
   width: 100vw;
   height: 100vh;
@@ -39,4 +45,17 @@ body {
   width: 91.5%;
   margin-inline: auto;
   padding-top: 1.5rem;
+}
+
+@media screen and (min-width: 769px) {
+  .notifications {
+    max-width: 730px;
+    height: auto;
+    margin-block: 4rem;
+    border-radius: 1rem;
+  }
+
+  .c-notifications {
+    padding-top: 2rem;
+  }
 }

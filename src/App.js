@@ -7,13 +7,13 @@ export default function App() {
   const [read, setRead] = useState(notificationsList);
 
   return (
-    <>
+    <main className="main">
       <section className="notifications">
         <div className="c-notifications">
           <Header setRead={setRead} notificationsList={notificationsList} />
           <Notifications />
         </div>
       </section>
-    </>
+    </main>
   );
 }

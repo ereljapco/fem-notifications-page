@@ -54,8 +54,9 @@ export default function Notifications() {
                     <span className="notification__unread-dot">&#9679;</span>
                   )}
                 </p>
+                <p className="notification__timestamp">{timeStamp} ago</p>
                 {itemImg ? (
-                  <a className="notifification__item-img-link" href={itemLink}>
+                  <a className="notification__item-img-link" href={itemLink}>
                     <img
                       className="notification__item-img"
                       src={itemImg}
@@ -66,7 +67,6 @@ export default function Notifications() {
                   ''
                 )}
               </div>
-              <p className="notification__timestamp">{timeStamp} ago</p>
               {itemMsg ? (
                 <p className="notification__item-msg">{itemMsg}</p>
               ) : (
