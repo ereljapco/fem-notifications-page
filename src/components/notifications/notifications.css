@@ -96,6 +96,14 @@
   margin-top: 0.75rem;
 }
 
+.notification__item-msg-link {
+  text-decoration: none;
+}
+
+.notification__item-msg-link:hover .notification__item-msg {
+  background-color: var(--clr-grayish-blue-200);
+}
+
 @media screen and (min-width: 769px) {
   .notifications-list {
     gap: 0.5rem;

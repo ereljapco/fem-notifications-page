@@ -68,7 +68,9 @@ export default function Notifications() {
                 )}
               </div>
               {itemMsg ? (
-                <p className="notification__item-msg">{itemMsg}</p>
+                <a className="notification__item-msg-link" href={itemLink}>
+                  <p className="notification__item-msg">{itemMsg}</p>
+                </a>
               ) : (
                 ''
               )}
