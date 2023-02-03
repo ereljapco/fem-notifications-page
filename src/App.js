@@ -10,7 +10,7 @@ export default function App() {
     <main className="main">
       <section className="notifications">
         <div className="c-notifications">
-          <Header setRead={setRead} notificationsList={notificationsList} />
+          <Header setRead={setRead} />
           <Notifications />
         </div>
       </section>

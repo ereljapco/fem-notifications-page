@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
+import notificationsList from '../../data/notificationsList';
 
 import './header.css';
 
-export default function Header({ setRead, notificationsList }) {
+export default function Header({ setRead }) {
   const unread = notificationsList.filter(
     (notification) => notification.isRead === ''
   );
