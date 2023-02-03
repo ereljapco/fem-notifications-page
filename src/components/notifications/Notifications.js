@@ -6,7 +6,7 @@ import './notifications.css';
 
 export default function Notifications() {
   return (
-    <section className="notifications-list">
+    <div className="notifications-list">
       {notificationsList.map((notification) => {
         const {
           id,
@@ -36,7 +36,7 @@ export default function Notifications() {
             />
             <div className="c-notification">
               <div className="c-notification__body">
-                <p className="notification__body">
+                <h2 className="notification__body">
                   <a className="notification__username" href={user.url}>
                     {user.name}
                   </a>
@@ -53,14 +53,14 @@ export default function Notifications() {
                   ) : (
                     <span className="notification__unread-dot">&#9679;</span>
                   )}
-                </p>
+                </h2>
                 <p className="notification__timestamp">{timeStamp} ago</p>
                 {itemImg ? (
                   <a className="notification__item-img-link" href={itemLink}>
                     <img
                       className="notification__item-img"
                       src={itemImg}
-                      alt=""
+                      alt={`commented on by ${user.name}`}
                     />
                   </a>
                 ) : (
@@ -78,6 +78,6 @@ export default function Notifications() {
           </article>
         );
       })}
-    </section>
+    </div>
   );
 }

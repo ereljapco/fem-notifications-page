@@ -39,6 +39,8 @@
 }
 
 .notification__body {
+  font-weight: inherit;
+  font-size: inherit;
   color: var(--clr-grayish-blue-600);
   line-height: 1.1rem;
 }
