@@ -5,13 +5,13 @@ import './header.css';
 
 export default function Header({ setRead }) {
   const unread = notificationsList.filter(
-    (notification) => notification.isRead === ''
+    (notification) => !notification.isRead
   );
   const [unreadCount, setUnreadCount] = useState(unread.length);
 
   const markReadAll = () => {
     const allReadNotifications = notificationsList.map((notification) => {
-      if (notification.isRead === '') {
+      if (!notification.isRead) {
         notification.isRead = 'yes';
       }
 

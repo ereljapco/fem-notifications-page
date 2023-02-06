@@ -20,13 +20,12 @@ export default function Notifications() {
           timeStamp,
         } = notification;
         const user = userList.find((user) => user.id === userId);
+
         return (
           <article
             key={id}
             className={
-              isRead === 'yes'
-                ? 'notification'
-                : 'notification notification--unread'
+              isRead ? 'notification' : 'notification notification--unread'
             }
           >
             <img
@@ -48,7 +47,7 @@ export default function Notifications() {
                   ) : (
                     ''
                   )}
-                  {isRead === 'yes' ? (
+                  {isRead ? (
                     ''
                   ) : (
                     <span className="notification__unread-dot">&#9679;</span>

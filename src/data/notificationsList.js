@@ -1,7 +1,7 @@
 const notificationsList = [
   {
     id: 1,
-    isRead: '',
+    isRead: false,
     userId: 1,
     notificationMsg: 'reacted to your recent post',
     itemTitle: 'My first tournament today!',
@@ -12,7 +12,7 @@ const notificationsList = [
   },
   {
     id: 2,
-    isRead: '',
+    isRead: false,
     userId: 2,
     notificationMsg: 'followed you',
     itemTitle: '',
@@ -23,7 +23,7 @@ const notificationsList = [
   },
   {
     id: 3,
-    isRead: '',
+    isRead: false,
     userId: 3,
     notificationMsg: 'has joined your group',
     itemTitle: 'Chess Club',
@@ -34,7 +34,7 @@ const notificationsList = [
   },
   {
     id: 4,
-    isRead: 'yes',
+    isRead: true,
     userId: 4,
     notificationMsg: 'sent you a private message',
     itemTitle: '',
@@ -46,7 +46,7 @@ const notificationsList = [
   },
   {
     id: 5,
-    isRead: 'yes',
+    isRead: true,
     userId: 5,
     notificationMsg: 'commented on your picture',
     itemTitle: '',
@@ -57,7 +57,7 @@ const notificationsList = [
   },
   {
     id: 6,
-    isRead: 'yes',
+    isRead: true,
     userId: 6,
     notificationMsg: 'reacted to your recent post',
     itemTitle: '5 end-game strategies to increase your win rate',
@@ -68,7 +68,7 @@ const notificationsList = [
   },
   {
     id: 7,
-    isRead: 'yes',
+    isRead: true,
     userId: 7,
     notificationMsg: 'left the group',
     itemTitle: 'Chess Club',
